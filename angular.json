@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "hostel-test"
+    }
+  },
+  "defaultProject": "hostel-test",
+  "cli": {
+    "analytics": false
+  }
 }
