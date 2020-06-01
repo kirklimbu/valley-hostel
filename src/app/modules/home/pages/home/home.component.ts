@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { faAtom, faFilm } from '@fortawesome/free-solid-svg-icons';
+import { faAtom, faFilm, faMap } from '@fortawesome/free-solid-svg-icons';
 
 import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
 
@@ -14,6 +14,7 @@ export class HomeComponent implements OnInit {
   faAtom = faAtom;
   isAnimated='';
   filmIcon = faFilm;
+  faMap = faMap;
 
   images = [700, 533, 807, 124].map((n) => `https://picsum.photos/id/${n}/1950/600`);
   constructor(config: NgbCarouselConfig) {
