@@ -9,9 +9,10 @@ import { NgModule } from '@angular/core';
 // Third-party
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ServicesComponent } from './pages/services/services.component';
+import { GallaryComponent } from './pages/gallary/gallary.component';
 
 @NgModule({
-  declarations: [HomeComponent, NavBarComponent, ServicesComponent, MapComponent],
+  declarations: [HomeComponent, NavBarComponent, ServicesComponent, MapComponent, GallaryComponent],
   imports: [
     CommonModule,
     HomeRoutingModule,
