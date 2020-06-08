@@ -17,5 +17,6 @@
     "titleBar.inactiveBackground": "#ff7f5099",
     "titleBar.inactiveForeground": "#15202b99"
   },
-  "peacock.color": "coral"
+  "peacock.color": "coral",
+  "vscode.tsc.compiler.alertTSConfigChanges": "never"
 }
