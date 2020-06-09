@@ -2,6 +2,7 @@
 import { RouterModule, Routes } from '@angular/router';
 
 import { AboutComponent } from './pages/about/about.component';
+import { ContactUsComponent } from './pages/contact-us/contact-us.component';
 import { GallaryComponent } from './pages/gallary/gallary.component';
 //Project
 import { HomeComponent } from './pages/home/home.component';
@@ -23,6 +24,9 @@ const routes: Routes = [
   },{
     path: 'about',
     component: AboutComponent
+  },{
+    path: 'contact-us',
+    component: ContactUsComponent
   }
 ];
 

@@ -12,9 +12,12 @@ export class HomeComponent implements OnInit {
 
   // Props
   faAtom = faAtom;
-  isAnimated='';
+  isAnimated = '';
   filmIcon = faFilm;
   faMap = faMap;
+
+  currentMenuId = 'menu1';
+
 
   images = [700, 533, 807, 124].map((n) => `https://picsum.photos/id/${n}/1950/600`);
   constructor(config: NgbCarouselConfig) {

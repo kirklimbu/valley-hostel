@@ -71,11 +71,11 @@
 
       <!-- map -->
       <!-- <div class="row mb-4"> -->
-        <div class="col-md-4 mb-4 text-center">
-          <fa-icon [icon]="faMap"></fa-icon>
-          <h3 class="text-center">Map</h3>
-          <app-map></app-map>
-        </div>
+      <div class="col-md-4 mb-4 text-center">
+        <fa-icon [icon]="faMap"></fa-icon>
+        <h3 class="text-center">Map</h3>
+        <app-map></app-map>
+      </div>
       <!-- </div> -->
 
       <!-- our location -->
@@ -84,11 +84,49 @@
     </section> -->
 
       <!-- photo gallary -->
-      <section>
+      <!-- <section>
         <app-gallary></app-gallary>
-      </section>
+      </section> -->
     </div>
   </div>
 </section>
 
 <!-- <app-about></app-about> -->
+
+<!--  scrollspy test -->
+
+<!-- <ul>
+  <li scrollSpyMenu="menu1" [currentContent]="currentMenuId">Menu 1</li>
+  <li scrollSpyMenu="menu2" [currentContent]="currentMenuId">Menu 2</li>
+  <li scrollSpyMenu="menu3" [currentContent]="currentMenuId">Menu 3</li>
+</ul>
+
+<div scrollSpyContent="DIV" [(currentContent)]="currentMenuId">
+  <div id="menu1">content1</div>
+  <div id="menu2">content2</div>
+  <div id="menu3">content3</div>
+</div> -->
+<!-- / scrollspy test -->
+
+<ul>
+  <li scrollSpyMenu="menu1" [ssmCurrentContent]="currentMenuId">Gallary</li>
+  <li scrollSpyMenu="menu2" [ssmCurrentContent]="currentMenuId">About</li>
+  <li scrollSpyMenu="menu3" [ssmCurrentContent]="currentMenuId">Contact us</li>
+</ul>
+<div
+  scrollSpyContent="DIV"
+  [(sscCurrentContent)]="currentMenuId"
+  class="container"
+>
+  <div id="Gallary" class="content">
+    <section>
+      <app-gallary></app-gallary>
+    </section>
+  </div>
+  <div id="About" class="content">
+    <app-about>
+
+    </app-about>
+  </div>
+  <div id="contact" class="content"><app-contact-us></app-contact-us></div>
+</div>
