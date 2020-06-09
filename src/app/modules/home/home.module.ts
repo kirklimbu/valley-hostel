@@ -11,15 +11,19 @@ import { NgModule } from '@angular/core';
 // Third-party
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ServicesComponent } from './pages/services/services.component';
+import {SimpleScrollSpyModule} from "angular-simple-scroll-spy";
+import { ContactUsComponent } from './pages/contact-us/contact-us.component';
 
 @NgModule({
-  declarations: [HomeComponent, NavBarComponent, ServicesComponent, MapComponent, GallaryComponent, AboutComponent],
+  declarations: [HomeComponent, NavBarComponent, ServicesComponent, MapComponent, GallaryComponent, AboutComponent, ContactUsComponent],
   imports: [
     CommonModule,
     HomeRoutingModule,
     NgbModule,
     FontAwesomeModule,
-    FormsModule
+    FormsModule,
+    SimpleScrollSpyModule,
+
 
 
   ]
