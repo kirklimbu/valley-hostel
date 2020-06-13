@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { faBars, faCoffee } from '@fortawesome/free-solid-svg-icons';
+import { faAtom, faBars, faCoffee } from '@fortawesome/free-solid-svg-icons';
+import { faFacebookSquare, faInstagramSquare, faTwitter, faTwitterSquare } from '@fortawesome/free-brands-svg-icons';
+
+import { library } from '@fortawesome/fontawesome-svg-core';
 
 @Component({
   selector: 'app-nav-bar',
@@ -10,11 +13,21 @@ export class NavBarComponent implements OnInit {
 
   // props
   active = 1;
-  faCoffee= faCoffee;
-  fabars=faBars;
-  constructor() { }
+  faCoffee = faCoffee;
+  fabars = faBars;
+  faTwitter = faTwitter;
+  faAtom = faAtom;
+  twitter = faTwitterSquare;
+  fb = faFacebookSquare;
+  insta = faInstagramSquare;
+
+  constructor() {
+    library.add(faTwitter);
+
+  }
 
   ngOnInit(): void {
+
   }
 
 }

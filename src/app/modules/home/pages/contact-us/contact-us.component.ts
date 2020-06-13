@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-// import { facebook } from '@fortawesome/free-brands-svg-icons';
-import { faAtom, faBook, faFilm, faMap } from '@fortawesome/free-solid-svg-icons';
-
-import { faFacebook } from '@fortawesome/free-brands-svg-icons';
+// import { facebook, faTwitterSquare, faInstagramSquare } from '@fortawesome/free-brands-svg-icons';
+import { faAtom, faBook, faFilm, faMap, faPhone, faPhoneSquare } from '@fortawesome/free-solid-svg-icons';
+import { faFacebook, faInstagramSquare, faTelegram, faTwitterSquare } from '@fortawesome/free-brands-svg-icons';
 
 @Component({
   selector: 'app-contact-us',
@@ -11,7 +10,10 @@ import { faFacebook } from '@fortawesome/free-brands-svg-icons';
 })
 export class ContactUsComponent implements OnInit {
 
-  facebook=faFacebook
+  fb = faFacebook;
+  twitter = faTwitterSquare;
+  insta = faInstagramSquare;
+  tele = faPhone;
 
   constructor() { }
 

@@ -1,42 +1,71 @@
 <div class="shadow-sm mb-4">
-
-<nav class="navbar navbar-expand-sm  navbar-light">
-  <div class="container">
-    <img
-      class="navbar-brand"
-      src="assets/images/valley-logo.png"
-      routerLink="home"
-      ngbTooltip="Valley Hostel"
-    />
-    <button
-      class="navbar-toggler"
-      data-toggle="collapse "
-      data-target="#navNavbar"
-    ><fa-icon [class]="fabars"></fa-icon>
-      <span class="navbar-toggle-icon"> </span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
-          <a class="nav-link" routerLink="/home">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="services">Services</a>
-        </li>
-         <li class="nav-item">
-          <a class="nav-link" routerLink="gallery">Galleries</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="about">About us</a>
-        </li>
-        <li>
-          <a class="nav-link" routerLink="contact-us">Contact us</a>
-        </li>
-
-      </ul>
+  <div class="container" id="sub-nav">
+    <div class="row">
+      <div class="col-md-12" style="font-size: 20px;">
+        <a href="https://www.facebook.com/valleyboyshostel/">
+          <fa-icon
+            [icon]="fb"
+            class="float-right mr-4"
+            ngbTooltip="Facebook"
+          ></fa-icon>
+        </a>
+        <a href="#">
+          <fa-icon
+            [icon]="twitter"
+            class="float-right mr-2"
+            ngbTooltip="Twitter"
+          >
+          </fa-icon>
+        </a>
+        <a href="#">
+          <fa-icon
+            [icon]="insta"
+            class="float-right mr-2"
+            ngbTooltip="Instagram"
+          >
+          </fa-icon>
+        </a>
+      </div>
     </div>
   </div>
-</nav>
+
+  <hr class="nav-line" />
+  <nav class="navbar navbar-expand-sm navbar-light" id="main-nav">
+    <div class="container">
+      <img
+        class="navbar-brand"
+        src="assets/images/valley-logo.png"
+        routerLink="home"
+        ngbTooltip="Valley Hostel"
+      />
+      <button
+        class="navbar-toggler"
+        data-toggle="collapse "
+        data-target="#navNavbar"
+      >
+        <fa-icon [class]="fabars"></fa-icon>
+        <span class="navbar-toggle-icon"> </span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" routerLink="/home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="gallery">Galleries</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="about">About us</a>
+          </li>
+          <li>
+            <a class="nav-link" routerLink="contact-us">Contact us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 </div>
 <!-- nav bar -->
-

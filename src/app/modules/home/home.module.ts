@@ -13,9 +13,10 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ServicesComponent } from './pages/services/services.component';
 import {SimpleScrollSpyModule} from "angular-simple-scroll-spy";
 import { ContactUsComponent } from './pages/contact-us/contact-us.component';
+import { FooterComponent } from './pages/footer/footer.component';
 
 @NgModule({
-  declarations: [HomeComponent, NavBarComponent, ServicesComponent, MapComponent, GallaryComponent, AboutComponent, ContactUsComponent],
+  declarations: [HomeComponent, NavBarComponent, ServicesComponent, MapComponent, GallaryComponent, AboutComponent, ContactUsComponent, FooterComponent],
   imports: [
     CommonModule,
     HomeRoutingModule,
