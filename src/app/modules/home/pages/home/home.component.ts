@@ -15,6 +15,7 @@ export class HomeComponent implements OnInit {
   isAnimated = '';
   filmIcon = faFilm;
   faMap = faMap;
+  capacity;
 
   currentMenuId = 'menu1';
 

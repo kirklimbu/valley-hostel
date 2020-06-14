@@ -30,4 +30,20 @@ export class NavBarComponent implements OnInit {
 
   }
 
+  toHome() {
+    document.getElementById('home').scrollIntoView({ behavior: 'smooth' });
+  }
+
+  toGallary() {
+    document.getElementById('gallary').scrollIntoView({ behavior: 'smooth' });
+  }
+
+  toAbout() {
+    document.getElementById('about').scrollIntoView({ behavior: 'smooth' });
+  }
+
+  toContact() {
+    document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+  }
+
 }
