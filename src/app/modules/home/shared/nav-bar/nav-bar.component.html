@@ -30,12 +30,13 @@
   </div>
 
   <hr class="nav-line" />
-  <nav class="navbar navbar-expand-sm navbar-light" id="main-nav">
+  <nav
+      class="navbar navbar-expand-sm navbar-light sticky-top"
+      id="main-nav">
     <div class="container">
       <img
         class="navbar-brand"
         src="assets/images/valley-logo.png"
-        routerLink="home"
         ngbTooltip="Valley Hostel"
       />
       <button
@@ -46,22 +47,43 @@
         <fa-icon [class]="fabars"></fa-icon>
         <span class="navbar-toggle-icon"> </span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
+      <div
+          class="collapse navbar-collapse"
+          id="navbarNav">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" routerLink="/home">Home</a>
+          <li
+              class="nav-item active"
+              (click)="toHome()"
+              >
+            <a
+                class="nav-link"
+                routerLinkActive="active"
+                >Home</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="services">Services</a>
+
+          <li
+              class="nav-item"
+              (click)="toGallary()"
+              >
+            <a
+                class="nav-link"
+                routerLinkActive="active">Galleries</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="gallery">Galleries</a>
+          <li
+              class="nav-item"
+              (click)="toAbout()"
+
+          >
+            <a
+                class="nav-link"
+                routerLinkActive="active">About us</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="about">About us</a>
-          </li>
-          <li>
-            <a class="nav-link" routerLink="contact-us">Contact us</a>
+          <li
+              class="nav-item"
+              (click)="toContact()">
+            <a
+                class="nav-link"
+                routerLinkActive="active">Contact us</a>
           </li>
         </ul>
       </div>
